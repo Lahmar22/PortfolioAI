@@ -1,4 +1,4 @@
-const {pool} = require("../config/db");
+const { pool } = require("../config/db");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
@@ -35,6 +35,15 @@ const register = async (req, res) => {
         );
 
         const user = result.rows[0];
+
+        await pool.query(
+            `INSERT INTO profiles(user_id, slug)
+                VALUES($1, $2)`,
+            [
+                user.id,
+                fullname.toLowerCase().replace(/\s+/g, "-")
+            ]
+        );
 
         const token = jwt.sign(
             {

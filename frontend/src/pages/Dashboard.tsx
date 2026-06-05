@@ -98,7 +98,7 @@ export default function Dashboard() {
             {/* Left Column: Profile Info */}
             <div className="lg:col-span-1 space-y-8">
               <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center text-3xl font-bold text-white mb-6 shadow-lg shadow-purple-500/20">
+                <div className="w-20 h-20 rounded-full bg-linear-to-br from-purple-500 to-indigo-500 flex items-center justify-center text-3xl font-bold text-white mb-6 shadow-lg shadow-purple-500/20">
                   {profile.fullname?.charAt(0) || "U"}
                 </div>
                 <h2 className="text-xl font-bold text-white mb-1">{profile.fullname}</h2>

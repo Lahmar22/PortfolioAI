@@ -168,7 +168,7 @@ export default function Dashboard() {
             </div>
             <div className="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-purple-500 to-indigo-500 transition-all duration-500 ease-out"
+                className="h-full bg-linear-to-r from-purple-500 to-indigo-500 transition-all duration-500 ease-out"
                 style={{ width: `${(step / (STEPS.length - 1)) * 100}%` }}
               />
             </div>

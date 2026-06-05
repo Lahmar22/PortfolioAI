@@ -174,7 +174,7 @@ export default function PortfolioPreview() {
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
-          <h1 className="text-6xl md:text-8xl font-extrabold text-white tracking-tight leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-br from-white via-slate-200 to-slate-500">
+          <h1 className="text-6xl md:text-8xl font-extrabold text-white tracking-tight leading-tight mb-6 bg-clip-text bg-linear-to-br from-white via-slate-200 to-slate-500">
             {profile.fullname}
           </h1>
           {profile.title && (
@@ -255,7 +255,7 @@ export default function PortfolioPreview() {
                   </div>
                   <div className="h-1.5 w-full bg-slate-700/50 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full"
+                      className="h-full bg-linear-to-r from-purple-500 to-indigo-500 rounded-full"
                       style={{ width: `${(s.level / 5) * 100}%` }}
                     />
                   </div>
@@ -303,7 +303,7 @@ export default function PortfolioPreview() {
               <div className="space-y-12">
                 {experiences.map((ex) => (
                   <div key={ex.id} className="relative pl-8 border-l-2 border-slate-800">
-                    <div className="absolute w-4 h-4 bg-slate-900 border-2 border-purple-500 rounded-full -left-[9px] top-1.5" />
+                    <div className="absolute w-4 h-4 bg-slate-900 border-2 border-purple-500 rounded-full -left-2.25 top-1.5" />
                     <h3 className="text-xl font-bold text-white mb-1">{ex.position}</h3>
                     <p className="text-lg text-purple-400 font-medium mb-2">{ex.company}</p>
                     {(ex.start_date || ex.end_date) && (
@@ -329,7 +329,7 @@ export default function PortfolioPreview() {
               <div className="space-y-12">
                 {education.map((ed) => (
                   <div key={ed.id} className="relative pl-8 border-l-2 border-slate-800">
-                    <div className="absolute w-4 h-4 bg-slate-900 border-2 border-indigo-500 rounded-full -left-[9px] top-1.5" />
+                    <div className="absolute w-4 h-4 bg-slate-900 border-2 border-indigo-500 rounded-full -left-2.25 top-1.5" />
                     <h3 className="text-xl font-bold text-white mb-1">{ed.school}</h3>
                     {ed.degree && (
                       <p className="text-lg text-indigo-400 font-medium mb-2">{ed.degree}</p>
@@ -355,7 +355,7 @@ export default function PortfolioPreview() {
             {certificates.map((c) => (
               <div key={c.id} className="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
+                  <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-2xl shrink-0">
                     📜
                   </div>
                   <div>

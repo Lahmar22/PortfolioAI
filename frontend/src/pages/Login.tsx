@@ -77,7 +77,7 @@ export default function Login() {
 
           <button
             type="submit"
-            className="w-full py-3.5 px-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold rounded-xl transition-all shadow-[0_0_20px_rgba(147,51,234,0.3)] hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center mt-2"
+            className="w-full py-3.5 px-4 bg-linear-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold rounded-xl transition-all shadow-[0_0_20px_rgba(147,51,234,0.3)] hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center mt-2"
             disabled={loading}
           >
             {loading ? (

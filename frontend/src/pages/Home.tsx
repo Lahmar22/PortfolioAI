@@ -8,9 +8,9 @@ export default function Home() {
     <div className="min-h-screen flex flex-col relative overflow-hidden bg-slate-900 text-slate-200">
       {/* Background Orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-purple-600/20 blur-[120px]" />
-        <div className="absolute top-[40%] -right-[10%] w-[40%] h-[40%] rounded-full bg-indigo-600/20 blur-[100px]" />
-        <div className="absolute -bottom-[20%] left-[20%] w-[60%] h-[60%] rounded-full bg-fuchsia-600/20 blur-[150px]" />
+        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-purple-600/20 blur-[120px]" />
+        <div className="absolute top-[40%] right-[10%] w-[40%] h-[40%] rounded-full bg-indigo-600/20 blur-[100px]" />
+        <div className="absolute bottom-[20%] left-[20%] w-[60%] h-[60%] rounded-full bg-fuchsia-600/20 blur-[150px]" />
       </div>
 
       <nav className="relative z-10 flex items-center justify-between px-8 py-6 max-w-7xl w-full mx-auto">
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6">
-          Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400">Professional Portfolio</span>{" "}
+          Build Your <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-fuchsia-400 to-indigo-400">Professional Portfolio</span>{" "}
           in Minutes
         </h1>
         
@@ -55,7 +55,7 @@ export default function Home() {
         <div className="mb-24">
           <Link
             to={isAuthenticated ? "/dashboard" : "/register"}
-            className="px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-lg font-semibold transition-all shadow-[0_0_30px_rgba(147,51,234,0.4)] hover:shadow-[0_0_40px_rgba(147,51,234,0.6)]"
+            className="px-8 py-4 rounded-full bg-linear-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-lg font-semibold transition-all shadow-[0_0_30px_rgba(147,51,234,0.4)] hover:shadow-[0_0_40px_rgba(147,51,234,0.6)]"
           >
             Start Building — It's Free
           </Link>
